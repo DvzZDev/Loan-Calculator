@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora prestamos</title>
+    <meta name="description" content="Una calculadora de préstamos simple y fácil de usar." />
+    <meta name="keywords" content="Calculadora, Préstamos, Finanzas, Intereses" />
+    <meta name="author" content="David Esteban Garcia" />
+    <title>Calculadora de préstamos</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap" rel="stylesheet" />
   </head>
   <body>
     <section>
-      <div id="title">
-        <h1>CALCULADORA PRESTAMOS</h1>
+      <div id="title" class="fancy">
+        <h1>CALCULADORA PRÉSTAMOS</h1>
       </div>
       <div class="input-box">
         <input type="range" id="range1" min="0" max="100000" class="slider" value="20000" />
@@ -31,7 +31,9 @@
         <input type="range" id="range2" min="0" max="500" class="slider" value="200" />
         <input id="mensualidad" value="200" />
         <span class="meses">meses</span>
+        <span id="años">16 años y 2 meses</span>
       </div>
+      
       <div class="box-menusalidad">
         <div id="container-mensualidad">
           <h1 id="men">Mensualidad</h1>

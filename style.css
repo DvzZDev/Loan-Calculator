@@ -145,7 +145,7 @@ section {
   align-items: center;
   flex-direction: column;
   gap: 60px;
-  margin-top: 18vh;
+  height: 100vh;
 }
 
 .input-box {
@@ -297,4 +297,73 @@ input:focus {
   100% {
     opacity: 1;
   }
+}
+
+@media (max-width: 550px) {
+  .input-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .unit {
+    position: absolute;
+    display: block;
+    left: 258px;
+    top: 11px;
+    z-index: 9;
+    color: var(--fourth-color);
+    font-size: 20px;
+  }
+  
+  .meses {
+    position: absolute;
+    display: block;
+    left: 217px;
+    top: 11px;
+    z-index: 9;
+    color: var(--fourth-color);
+    font-size: 20px;
+  }
+  
+  .intereses {
+    position: absolute;
+    display: block;
+    left: 195px;
+    top: 11px;
+    z-index: 9;
+    color: var(--fourth-color);
+    font-size: 20px;
+  }
+  #title{
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    height: 85vh;
+  }
+  input{
+    width: 100px;
+  }
+
+  .box-menusalidad {
+    width: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    gap: 20px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+  
+    
 }

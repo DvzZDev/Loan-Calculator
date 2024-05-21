@@ -255,7 +255,7 @@ input[type="range"]:focus {
   z-index: 10;
   color: var(--fourth-color);
   font-size: 15px;
-  width: 120px;
+  width: 130px;
   font-style: italic;
 }
 
@@ -429,7 +429,7 @@ input:focus {
     z-index: 10;
     color: var(--fourth-color);
     font-size: 15px;
-    width: 120px;
+    width: 130px;
     font-style: italic;
   }
 

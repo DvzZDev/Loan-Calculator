@@ -176,6 +176,26 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-runnable-track {
   background-color: var(--second-color);
   border-radius: 10px;
+  -webkit-appearance: none; /* Necesario para Safari */
+}
+
+/* Estilos específicos para el thumb en Safari */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Necesario para Safari */
+  border: none;
+  height: 15px; /* Ajusta a tu gusto */
+  width: 15px; /* Ajusta a tu gusto */
+  border-radius: 50%; /* Hace que el thumb sea circular */
+  background: var(--second-color); /* Ajusta a tu gusto */
+}
+
+/* Estilos específicos para el thumb en el resto de navegadores */
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  height: 15px; /* Ajusta a tu gusto */
+  width: 15px; /* Ajusta a tu gusto */
+  border-radius: 50%; /* Hace que el thumb sea circular */
+  background: var(--second-color); /* Ajusta a tu gusto */
 }
 
 .unit {
@@ -316,7 +336,7 @@ input:focus {
     color: var(--fourth-color);
     font-size: 20px;
   }
-  
+
   .meses {
     position: absolute;
     display: block;
@@ -326,7 +346,7 @@ input:focus {
     color: var(--fourth-color);
     font-size: 20px;
   }
-  
+
   .intereses {
     position: absolute;
     display: block;
@@ -336,7 +356,7 @@ input:focus {
     color: var(--fourth-color);
     font-size: 20px;
   }
-  #title{
+  #title {
     margin: 10px;
     text-align: center;
     width: 300px;
@@ -349,7 +369,7 @@ input:focus {
     gap: 60px;
     height: 85vh;
   }
-  input{
+  input {
     width: 100px;
   }
 
@@ -364,6 +384,4 @@ input:focus {
     align-items: center;
     justify-content: center;
   }
-  
-    
 }

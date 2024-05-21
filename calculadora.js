@@ -22,7 +22,7 @@ range1.oninput = function () {
 
 totalPrestamoElement.oninput = function () {
   let valorSinFormato = this.value.replace(/\./g, "");
-  if (valorSinFormato > range1.max) {
+  if (Number(valorSinFormato) > Number(range1.max)) {
     range1.value = range1.max;
   } else {
     range1.value = valorSinFormato;

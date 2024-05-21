@@ -16,4 +16,4 @@ The loan calculator allows users to enter the loan amount, interest rate, and lo
 
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in your browser.
-3. Alternatively, you can access the calculator online [here](https://dvzzdev.github.io/Calculadora_Financiera/).
+3. Alternatively, you can access the calculator online [here](https://dvzzdev.github.io/Loan-Calculator/).

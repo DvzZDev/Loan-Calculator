@@ -140,10 +140,11 @@ section {
   align-items: center;
   flex-direction: column;
   gap: 60px;
-  height: 95vh;
+  height: 95svh;
 }
 
 footer {
+  position: absolute;
   min-height: 5vh;
   display: flex;
   flex-direction: row;

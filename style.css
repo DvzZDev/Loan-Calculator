@@ -162,6 +162,15 @@ footer {
   height: 50px;
 }
 
+.iconos {
+  height: 20px;
+  transition: height 0.2s;
+}
+
+.iconos:hover {
+  height: 30px;
+}
+
 a {
   color: white;
   transition: color 0.2s;

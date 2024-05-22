@@ -132,13 +132,13 @@ table {
   background-color: var(--first-color);
   color: white;
   font-family: "Jost", sans-serif;
+  animation: backgroud 1.5s ease-out;
 }
 
-html{
+html {
   overflow-y: scroll;
   scrollbar-width: none;
 }
-
 
 section {
   display: flex;
@@ -149,7 +149,6 @@ section {
   justify-content: center;
   align-items: center;
   animation: entrada 1.1s ease-out;
-
 }
 
 footer {
@@ -447,7 +446,6 @@ input:focus {
   }
 }
 
-
 @keyframes entrada {
   0% {
     opacity: 0;
@@ -472,6 +470,15 @@ input:focus {
   }
 }
 
+@keyframes backgroud {
+  0% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: var(--first-color);
+  }
+}
 
 @media (max-width: 550px) {
   .input-box {

@@ -132,7 +132,7 @@ table {
   background-color: var(--first-color);
   color: white;
   font-family: "Jost", sans-serif;
-  animation: backgroud 1.5s ease-out;
+  animation: background 1.5s ease-out;
 }
 
 html {
@@ -470,7 +470,7 @@ input:focus {
   }
 }
 
-@keyframes backgroud {
+@keyframes background {
   0% {
     background-color: black;
   }

@@ -134,6 +134,12 @@ table {
   font-family: "Jost", sans-serif;
 }
 
+html{
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+
 section {
   display: flex;
   align-items: center;
@@ -142,6 +148,8 @@ section {
   height: 80vh;
   justify-content: center;
   align-items: center;
+  animation: entrada 1.1s ease-out;
+
 }
 
 footer {
@@ -152,6 +160,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
+  animation: abajo 1s ease-out;
 }
 #ft {
   display: flex;
@@ -438,14 +447,31 @@ input:focus {
   }
 }
 
-@keyframes underline {
+
+@keyframes entrada {
   0% {
-    text-decoration: none;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(10%);
   }
   100% {
-    text-decoration: underline;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+@keyframes abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 @media (max-width: 550px) {
   .input-box {
@@ -505,9 +531,8 @@ input:focus {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 80vh;
+    animation: entrada 1.1s ease-out;
   }
   input {
     width: 100px;
